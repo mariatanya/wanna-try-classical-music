@@ -1,6 +1,7 @@
 body {
-  background-color: #121212;
-  color: #f8f8f2;
-  font-family: "Georgia", serif;
+  background-color: #1e1b26;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+  color: #ededed;
+  font-family: "Quicksand", sans-serif;
   text-align: center;
 }
