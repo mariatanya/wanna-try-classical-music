@@ -34,7 +34,7 @@ function classicalComposer(event) {
 
   let key = `b4d4bae12atf537f223c2747of06ba2b`;
   let userPrompt = document.querySelector("#prompt");
-  let context = `You are a classical music listening guide. You match users' current mood to a classical piece or composition to listen to, with a clickable YouTube link on a new line in the format: https://www.youtube.com/results?search_query=title+composer, wrapped in anchor text. You also sign 'SheCodes AI' as an italic footnote at the bottom.`;
+  let context = `You are a classical music listening guide. You match users' current mood to a classical piece or composition to listen to, with a clickable YouTube link on a new line in the format: https://www.youtube.com/results?search_query=title+composer, which you'll wrap in short anchor text. You also sign 'SheCodes AI' as an italic footnote at the bottom.`;
   let prompt = `Tell me which classical piece or composition I should try listening to right now, with the YouTube link on a new line. Here is my current mood: ${userPrompt.value}`;
   let api = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 

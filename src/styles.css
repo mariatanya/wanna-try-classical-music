@@ -10,7 +10,7 @@ body {
 
 .container {
   margin: 40px auto;
-  max-width: 600px;
+  max-width: 620px;
 }
 
 header {
@@ -77,7 +77,7 @@ main {
   position: relative;
   background: transparent;
   border-left: 4px solid #ffddb0;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 15px;
   margin-top: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -89,6 +89,7 @@ main {
 #content a {
   display: inline-block;
   padding: 10px 20px;
+  margin-top: 5px;
   background-color: #ffddb0;
   color: black;
   text-decoration: none;
