@@ -12,22 +12,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script
+      src="https://kit.fontawesome.com/96d8e18d9d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Which Classical Composer Are You?</h1>
+        <h1>Wanna try Classical Music? <i class="fa-solid fa-music"></i></h1>
       </header>
       <main>
         <form action="" id="form">
           <input
-            type="text"
-            placeholder="Describe yourself in a sentence or two"
+            type="search"
+            placeholder="Describe your current mood in a few words"
             autofocus
             required
             autocorrect="off"
             class="prompt"
+            id="prompt"
           />
           <input type="submit" class="button" />
         </form>

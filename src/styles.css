@@ -4,7 +4,6 @@ body {
     rgb(0, 0, 0) 11.2%,
     rgb(11, 132, 145) 91.1%
   );
-
   color: #ededed;
   font-family: "Comfortaa", sans-serif;
 }
@@ -26,7 +25,7 @@ h1 {
 
 form {
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -57,7 +56,7 @@ form {
 }
 
 .button:hover {
-  background-color: #fceabb;
+  background-color: #ffddb0;
 }
 
 main {
@@ -65,15 +64,32 @@ main {
 }
 
 .content {
-  background-color: rgba(255, 221, 176, 0.1);
-  border-left: 4px solid #fceabb;
-  padding: 25px;
-  border-radius: 10px;
+  background: transparent;
+  border-left: 4px solid #ffddb0;
+  padding: 20px;
+  border-radius: 15px;
   margin-top: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-size: 17px;
   line-height: 1.6;
   min-height: 100px;
+}
+
+#content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffddb0;
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#content a:hover {
+  background-color: #a87ff3;
+  color: inherit;
 }
 
 footer {
