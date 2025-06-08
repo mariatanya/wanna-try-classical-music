@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-  margin: 45px auto;
-  max-width: 650px;
+  margin: 40px auto;
+  max-width: 600px;
 }
 
 header {
@@ -136,4 +136,47 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    padding: 15px 10px;
+  }
+
+  input.prompt,
+  input.button {
+    padding: 0 5px;
+    font-size: 1rem;
+  }
+
+  .content {
+    min-height: 100px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #image {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #content {
+    font-size: 0.95rem;
+  }
+
+  .hint {
+    font-size: 0.85rem;
+  }
 }
