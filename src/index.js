@@ -38,8 +38,18 @@ function classicalComposer(event) {
   let prompt = `Tell me which classical piece or composition I should try listening to right now, with the YouTube link on a new line. Here is my current mood: ${userPrompt.value}`;
   let api = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
-  axios.get(api).then(displayContent);
+  let contentElement = document.querySelector("#content");
+  contentElement.innerHTML = `
+    <div id="loading-text">Generating recommendation <i class="fa-regular fa-hourglass-half"></i></div>
+    <img src="src/classicalmusic.png" alt="Image of classical music" />
+  `;
+
+  axios.get(api).then(function (response) {
+    // Clear image and loading text, then show the typed content
+    contentElement.innerHTML = "";
+    displayContent(response);
+  });
 }
 
-let contentElement = document.querySelector("#form");
-contentElement.addEventListener("submit", classicalComposer);
+let formElement = document.querySelector("#form");
+formElement.addEventListener("submit", classicalComposer);

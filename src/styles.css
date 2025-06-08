@@ -23,10 +23,10 @@ h1 {
   text-align: center;
 }
 
-form {
+.form-container {
   padding: 30px;
-  border-radius: 18px;
-  display: flex;
+  padding-bottom: 20px;
+  border-radius: 20px;
   align-items: center;
   gap: 12px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -34,9 +34,15 @@ form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+form {
+  display: flex;
+}
+
 .prompt {
   font-size: 18px;
   padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 12px;
   border-radius: 20px;
   border: 1px solid #ccc;
   height: 60px;
@@ -59,11 +65,16 @@ form {
   background-color: #ffddb0;
 }
 
+.hint {
+  opacity: 0.7;
+}
+
 main {
   margin: 30px;
 }
 
 .content {
+  position: relative;
   background: transparent;
   border-left: 4px solid #ffddb0;
   padding: 20px;
@@ -72,7 +83,7 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-size: 17px;
   line-height: 1.6;
-  min-height: 100px;
+  min-height: 150px;
 }
 
 #content a {
@@ -83,13 +94,30 @@ main {
   text-decoration: none;
   border-radius: 15px;
   font-weight: bold;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #content a:hover {
   background-color: #a87ff3;
   color: inherit;
+}
+
+#content em {
+  color: #a87ff3;
+}
+
+#content .placeholder {
+  display: none;
+}
+
+#loading-text {
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  opacity: 0.9;
+  font-size: 21px;
 }
 
 footer {

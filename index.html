@@ -25,19 +25,28 @@
         <h1>Wanna try Classical Music? <i class="fa-solid fa-music"></i></h1>
       </header>
       <main>
-        <form action="" id="form">
-          <input
-            type="search"
-            placeholder="Describe your current mood in a few words"
-            autofocus
-            required
-            autocorrect="off"
-            class="prompt"
-            id="prompt"
+        <div class="form-container">
+          <form action="" id="form">
+            <input
+              type="search"
+              placeholder="Describe your mood in words or emojis"
+              autofocus
+              required
+              autocorrect="off"
+              class="prompt"
+              id="prompt"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <small class="hint">e.g cheerful, stressed 🥳 relaxed, blue...</small>
+        </div>
+        <div class="content" id="content">
+          <img
+            src="src/classicalmusic.png"
+            alt="Image of classical music"
+            id="image"
           />
-          <input type="submit" class="button" />
-        </form>
-        <div class="content" id="content"></div>
+        </div>
       </main>
 
       <footer>
@@ -47,12 +56,12 @@
         >
         open-sourced on
         <a
-          href="https://github.com/mariatanya/which-composer-are-you"
+          href="https://github.com/mariatanya/wanna-try-classical-music"
           target="_blank"
           >GitHub,</a
         >
         and hosted on
-        <a href="https://which-composer-are-you.netlify.app/" target="_blank"
+        <a href="https://wanna-try-classical-music.netlify.app/" target="_blank"
           >Netlify</a
         >.
       </footer>
